@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(0, 0%, 98%);
+}
+h1, h2 {
+    color: hsl(234, 12%, 34%);
+}
+p {
+    margin: 1rem 0;
+    color: hsl(229, 6%, 66%);
+    font-size: 0.95rem;
+}
+header {
+    margin: 4rem 0 2rem;
+    text-align: center;
+}
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+section {
+    max-width: 20rem;
+    max-height: 12rem;
+    margin: 1.5rem 0;
+    padding: 2rem;
+
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 40px -15px hsl(234, 12%, 34%);
+}
+section figure {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+section img {
+    width: 3rem;
+    object-fit: scale-down;
+}
+
+.supervisor {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.team {
+    break-before: column;
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.karma {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+.calculator {
+    break-before: column;
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a:hover {
+    color: hsl(0, 78%, 62%);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (min-width: 800px) {
+    header :is(h1, h2) {
+        font-size: xx-large;
+    }
+    header p {
+        width: 60%;
+        margin: auto;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        column-gap: 2rem;
+    }
+}
